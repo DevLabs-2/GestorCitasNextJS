@@ -4,7 +4,6 @@ import Formulario from '../components/Formulario/Index.jsx';
 import { useState } from 'react';
 import Modal from '../components/Modal/index.jsx';
 import styles from '../app/page.module.css'
-import Link from 'next/link.js';
 export default function Home() {
 const [arrayTurnos, setArrayturnos] = useState([]);
 const addCita = (cita) => {
@@ -30,9 +29,16 @@ const deleteString = 'Vas a eliminar esta cita. Deseas continuar?'
 
   return (
     <div className={styles.app}> 
-      <Link href={"/reservas"}>
-        Reserva
-      </Link>
+      <Formulario onAddCita={addCita}/>
+      <Listado arrayTurnos = {arrayTurnos} onDeleteCita = {deleteCita}/>
+      {showModal && <Modal h1={deleteString} setter={(value) => {
+            if (value) {
+              deletionHandler(turnoAEliminar); 
+            }
+            setShowModal(false); 
+          }}
+          isOpen={setShowModal}
+      />}
     </div>
   );
 }
