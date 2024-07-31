@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-const ImagenConTexto = ({ src, alt, borderRadius, texto }) => {
+const ImagenConTexto = (props) => {
     const estilosImagen = {
-        borderRadius: borderRadius,
+        borderRadius: props.borderRadius,
         width: '200px', // Puedes ajustar el tamaño según lo necesites
         height: '200px',
         objectFit: 'cover',
@@ -11,21 +10,11 @@ const ImagenConTexto = ({ src, alt, borderRadius, texto }) => {
 
     return (
         <div style={{ textAlign: 'center' }}>
-            <img src={src} alt={alt} style={estilosImagen} />
-            <p>{texto}</p>
+            <img src={`../../../public/${props.src}`} alt={props.alt} style={estilosImagen} />
+            <p>{props.texto}</p>
         </div>
     );
 };
 
-ImagenConTexto.propTypes = {
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    borderRadius: PropTypes.string,
-    texto: PropTypes.string.isRequired,
-};
-
-ImagenConTexto.defaultProps = {
-    borderRadius: '50%', // Valor por defecto para hacerla redonda
-};
 
 export default ImagenConTexto;

@@ -3,22 +3,20 @@ import { useState } from 'react';
 import styles from '../Styles/page.module.css'
 import Link from 'next/link.js';
 import ImagenConTexto from '@/components/perfil';
-import miImagen from '../public/bg.jpg';
+
 export default function Contacto() {
 return (
     <>
-    <div className={styles.app}> 
+    <div className={styles.app} style={{justifyContent:'space-around'}}> 
     <ImagenConTexto
-                src={miImagen} // Usa la imagen importada
-                alt="Ejemplo"
-                borderRadius="50%" // Cambia este valor para personalizar el border radius
-                texto="Este es un texto debajo de la imagen."
+                src={'julian.jpg'}
+                borderRadius="50%"
+                texto="Yo soy Julián Furland Otero y me dedico a la logica del programa"
             />
             <ImagenConTexto
-                src={miImagen} // Usa la misma imagen o cambia a otra
-                alt="Ejemplo 2"
-                borderRadius="10px" // Cambia este valor para personalizar el border radius
-                texto="Este es otro ejemplo con un borde cuadrado."
+                src={'maxi.jpeg'} 
+                borderRadius="50%" 
+                texto="Mi nombre es Maximiliano Sher y me especializo en el diseño de la página."
             />
     </div>
 </>
