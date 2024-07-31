@@ -1,10 +1,10 @@
 'use client'
-import Listado from '../components/Listado/index.jsx'
-import Formulario from '../components/Formulario/Index.jsx';
+import Listado from '../../components/Listado/index.jsx'
+import Formulario from '../../components/Formulario/Index.jsx';
 import { useState } from 'react';
-import Modal from '../components/Modal/index.jsx';
-import styles from '../app/page.module.css'
-export default function Home() {
+import Modal from '../../components/Modal/index.jsx';
+import styles from '../page.module.css'
+export default function Reservas() {
 const [arrayTurnos, setArrayturnos] = useState([]);
 const addCita = (cita) => {
   setArrayturnos([...arrayTurnos, cita]);
