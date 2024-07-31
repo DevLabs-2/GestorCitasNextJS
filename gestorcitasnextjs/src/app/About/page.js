@@ -6,7 +6,7 @@ export default function Contacto() {
 return (
     <>
     <div className={styles.app}> 
-    <h1>Contacto</h1>
+    <h1>Nosotros</h1>
     </div>
 </>
 );

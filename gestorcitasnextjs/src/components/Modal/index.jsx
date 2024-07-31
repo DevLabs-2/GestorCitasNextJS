@@ -1,4 +1,4 @@
-import styles from '../../app/page.module.css'
+import styles from '../../app/Styles/page.module.css'
 const Modal = (props) => {
     return(
         <>
