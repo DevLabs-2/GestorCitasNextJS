@@ -11,12 +11,13 @@ return (
     <ImagenConTexto
                 src={'julian.jpg'}
                 borderRadius="50%"
-                texto="Yo soy Julián Furland Otero y me dedico a la logica del programa"
+                texto={`Yo soy Julián Furland Otero y me dedico a la logica del programa`}
             />
             <ImagenConTexto
                 src={'maxi.jpeg'} 
                 borderRadius="50%" 
                 texto="Mi nombre es Maximiliano Sher y me especializo en el diseño de la página."
+                marginLeft={'-30%'}
             />
     </div>
 </>

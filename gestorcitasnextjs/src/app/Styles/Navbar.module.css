@@ -23,3 +23,9 @@
     text-decoration: none;
     color: #b3b3b3;
 }
+
+.sidebar h2, .sidebar li{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }

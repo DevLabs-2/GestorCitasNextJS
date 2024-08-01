@@ -7,6 +7,12 @@
   min-height: 100vh;
 }
 
+.app h1, .app h2, .app h3, .app p, .sidebar h2, .sidebarLink {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 const ImagenConTexto = (props) => {
     const estilosImagen = {
         borderRadius: props.borderRadius,
@@ -9,8 +8,8 @@ const ImagenConTexto = (props) => {
     };
 
     return (
-        <div style={{ textAlign: 'center' }}>
-            <img src={`../../../public/${props.src}`} alt={props.alt} style={estilosImagen} />
+        <div style={{ textAlign: 'center', marginLeft: props.marginLeft }}>
+            <img src={`/${props.src}`} alt={props.alt} style={estilosImagen} />
             <p>{props.texto}</p>
         </div>
     );
